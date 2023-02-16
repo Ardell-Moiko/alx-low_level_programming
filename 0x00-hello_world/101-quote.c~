@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+/**
+ *main - Entry point
+ *
+ *Return: This time 1 (Success)
+ */
+
+int main(void)
+{
+  printf(Hey);
+
+  return (1);
+}
