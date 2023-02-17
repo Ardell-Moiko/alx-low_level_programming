@@ -1,19 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <ctype.h>
 /**
  *main - Entry point
  *
- *Return: Always 0 (Success)
+ *Return: Always 0 (sucess)
  */
 
 int main(void)
 {
 int x;
-for (x = 0; x < 10; x++)
+for (x = 'z'; x >= 'a'; x--)
 {
-  printf(x);
+putchar(x);
 }
-printf('\n');
+putchar('\n');
 return (0);
 }
