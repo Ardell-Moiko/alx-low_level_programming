@@ -7,7 +7,7 @@
 
 int main(void)
 {
-char sl = tolower('M');
+char sl = toLower('M');
 putchar(sl);
 return (0);
 }
