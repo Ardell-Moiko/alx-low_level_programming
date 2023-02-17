@@ -28,5 +28,6 @@ int main(void)
 	else
 	{
 	  printf("Last digit of %d is %d and is 0", n, ld);
+	}
 	return (0);
 }
