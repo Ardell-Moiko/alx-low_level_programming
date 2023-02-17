@@ -14,7 +14,7 @@ for (x = 'A'; x <= 'Z'; x++)
 {
 char sl = tolower(x);
 putchar(sl);
-putchar('\n');
 }
+putchar('\n');
 return (0);
 }
