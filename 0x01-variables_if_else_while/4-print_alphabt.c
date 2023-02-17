@@ -17,10 +17,7 @@ if (x != 'e' && x != 'q')
 {
 putchar(x);
 }
-else
-{
+}
 putchar('\n');
-}
-}
-  return (0);
+return (0);
 }
