@@ -15,7 +15,7 @@ for (x = 0; x <= 9; x++)
 {
 for (y = 0; y <= 9; y++)
 {
-if (x != y)
+if (x != y && y != x)
 {
 putchar('0' + x);
 putchar('0' + y);
