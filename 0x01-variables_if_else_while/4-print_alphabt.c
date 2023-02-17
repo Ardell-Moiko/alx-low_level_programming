@@ -10,16 +10,16 @@
 
 int main(void)
 {
-int x, y;
+int x;
 for (x = 'a'; x <= 'z'; x++)
 {
-if (x != e && x != q)
+if (x != 'e' && x != 'q')
 {
 putchar(x);
 }
 else
 {
-puthcar('\n');
+putchar('\n');
 }
 }
   return (0);
