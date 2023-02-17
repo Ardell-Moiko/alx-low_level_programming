@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <stdlib.h>
 /**
  *main - Entry point
  *
@@ -8,7 +9,10 @@
 
 int main(void)
 {
-char sl = tolower('M');
+for (int x = 'A'; x <= 'Z'; x++)
+{
+char sl = tolower(x);
 putchar(sl);
+}
 return (0);
 }
