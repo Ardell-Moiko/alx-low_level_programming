@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 /**
  *main - Entry point
  *
@@ -7,7 +8,7 @@
 
 int main(void)
 {
-char sl = toLower('M');
+char sl = tolower('M');
 putchar(sl);
 return (0);
 }
