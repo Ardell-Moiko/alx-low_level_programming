@@ -13,7 +13,8 @@ int x;
 for (x = 'A'; x <= 'Z'; x++)
 {
 char sl = tolower(x);
-putchar("\n", sl);
+putchar(sl);
+putchar("\n");
 }
 return (0);
 }
