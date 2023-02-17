@@ -7,10 +7,7 @@
 
 int main(void)
 {
-for (int x = 'A'; x <= 'Z'; x++)
-{
-char smaller = tolower(x);
-putchar(smaller);
-}
+char sl = tolower('M');
+putchar(sl);
 return (0);
 }
