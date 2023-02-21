@@ -2,8 +2,9 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
+ * add - check the code
+ * @i: first integer
+ * @j: second integer
  * Return: Always 0.
  */
 int add(int i, int j)
