@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
  * _abs - check the code
@@ -9,6 +7,13 @@
  */
 int _abs(int x)
 {
-_putchar('0' + abs(x));
-return (0);
+
+/*av stores the absolute value of x*/
+int av;
+if (x < 0)
+{
+av = x * -1;
+return (av);
+}
+return (x);
 }
