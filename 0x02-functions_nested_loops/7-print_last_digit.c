@@ -10,6 +10,10 @@ int print_last_digit(int x)
 /*ld stores the last digit of x*/
 int ld;
 ld = x % 10;
+if (ld < 0)
+{
+ld = ld * -1;
+}
 _putchar('0' + ld);
-return (0);
+return (ld);
 }
