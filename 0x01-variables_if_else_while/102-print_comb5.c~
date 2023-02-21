@@ -10,17 +10,19 @@
 
 int main(void)
 {
-int x, y, z;
-for (x = 0; x <= 7; x++)
+int x, y;
+for (x = 0; x <= 99; x++)
 {
-for (y = x + 1; y <=8; y++)
+for (y = 0; y <= 100; y++)
 {
-for (z = y + 1; z <= 9; z++)
+if (x != y)
 {
-putchar('0' + x);
-putchar('0' + y);
-putchar('0' + z);
-if (x == 7 && y == 8 && z == 9)
+putchar('0' + (x / 10));
+putchar('0' + (x % 10));
+putchar(' ');
+putchar('0' + (y / 10));
+putchar('0' + (y & 10));
+if (x == 98 && y == 99)
 break;
 putchar(',');
 putchar(' ');
