@@ -2,7 +2,7 @@
 
 /**
  * _islower - check the code.
- * int c - character variable.
+ * Description: c - character variable.
  * Return: Always 0.
  */
 int _islower(int c)
