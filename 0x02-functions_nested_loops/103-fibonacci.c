@@ -9,21 +9,17 @@
  */
 int main(void)
 {
-int a, b, c, total;
-a = 1;
-b = 1;
-total = 0;
+int i = 0;
+long a = 1, b = 2, total = b;
 
-while (c <= 4000000)
+while (a + b < 4000000)
 {
-c = a +b;
-if ((c % 2) == 0)
-{
-total += c;
-a = b;
-b = c;
+b += a;
+if (b % 2 == 0)
+total += b;
+a = b - a;
+++i;
 }
-}
-printf("%d\n", total);
+printf("%ld\n", total);
 return (0);
 }
