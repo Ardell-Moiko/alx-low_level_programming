@@ -7,36 +7,31 @@
  */
 void print_times_table(int n)
 {
-int x, y, z, i, j;
-if (n > 15 || n == 0)
-{
-}
-else
+int x, y, z;
+if (n >= 0 && n <= 15)
 {
 for (x = 0; x <= n; x++)
 {
-for (y = 0; y <= n; y++)
+_putchar('0');
+for (y = 1; y <= n; y++)
 {
+_putchar(',');
+_putchar(' ');
 z = x * y;
-if (z > n)
-{
-i = z % 10;
-j = (z - i) / 10;
-_putchar(',');
+if(z <= 99)
 _putchar(' ');
-_putchar('0' + j);
-_putchar('0' + i);
-}
-else
-{
-if (y != 0)
-{
-_putchar(',');
+if(z <= 9)
 _putchar(' ');
-_putchar(' ');
+if (z >= 100)
+{
+_putchar('0' + (z / 100));
+_putchar('0' + ((z / 10) % 10));
 }
-_putchar('0' + z);
+else if (z <= 99 && z >= 10)
+{
+_putchar('0' + (z / 10));
 }
+_putchar('0' + (z % 10));
 }
 _putchar('\n');
 }
