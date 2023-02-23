@@ -18,9 +18,9 @@ for (y = 1; y <= n; y++)
 _putchar(',');
 _putchar(' ');
 z = x * y;
-if(z <= 99)
+if (z <= 99)
 _putchar(' ');
-if(z <= 9)
+if (z <= 9)
 _putchar(' ');
 if (z >= 100)
 {
