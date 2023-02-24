@@ -19,6 +19,6 @@ if (numb % i == 0)
 lf = numb / i;
 }
 }
-printf("%ld\n", lf;
+printf("%ld\n", lf);
 return (0);
 }
