@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * reset_to_98 - resets pointer val to 98. 
+ * reset_to_98 - resets pointer val to 98
  * @n: pointer variable
  * Return: Always 0.
  */
