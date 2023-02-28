@@ -29,7 +29,7 @@ if (isi == 1)
 {
 break;
 }
-i++
+i++;
 }
 ni *= min;
 return (0);
