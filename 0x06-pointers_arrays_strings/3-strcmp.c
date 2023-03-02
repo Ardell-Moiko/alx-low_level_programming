@@ -21,7 +21,7 @@ break;
 i++;
 }
 if (flag == 0)
-return 0;
+return (0);
 else
 return (*s1 - *s2);
 }
