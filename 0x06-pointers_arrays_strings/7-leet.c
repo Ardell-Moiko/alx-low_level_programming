@@ -8,6 +8,7 @@
  */
 char *leet(char *s)
 {
+char *result = s;
 char a[] = { 'a', 'e', 'o', 't', 'l' };
 char n[] = { 4, 3, 0, 7, 1 };
 int i = 0;
@@ -20,5 +21,5 @@ if (*s == a[i] || *s == a[i] - 32)
 }
 s++;
 }
-return (s);
+return (result);
 }
