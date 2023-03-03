@@ -12,7 +12,7 @@ int i = 0;
 
 while (s[i])
 {
-while (!(s[i] >= 97 && s[i] <= 122))
+while (!(s[i] >= 'a' && s[i] <= 'z'))
 i++;
 if (s[i - 1] == ' ' ||
 s[i - 1] == '\t' ||
