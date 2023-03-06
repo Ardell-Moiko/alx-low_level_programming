@@ -1,0 +1,1 @@
+This directory contains C source files on C pointers, arrays and strings project tasks.
