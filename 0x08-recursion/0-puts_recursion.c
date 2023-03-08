@@ -2,7 +2,7 @@
 
 /**
  * _puts_recursion - Prints a string using recursion.
- * @n: String variable.
+ * @s: String variable.
  * Return: Always 0.
  */
 void _puts_recursion(char *s)
