@@ -4,6 +4,7 @@
 /**
  * _sqrt_recursion - main recursive funxtion
  * @n: Integer var
+ * @i: iteration integer
  * Return: natural sqrt
  */
 int _sqrt(int n, int i);
