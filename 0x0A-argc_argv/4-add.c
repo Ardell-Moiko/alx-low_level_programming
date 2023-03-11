@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 /**
  * main - prints the sum of integers.
  * @argc: number of commands entered in argv
@@ -10,18 +11,25 @@
 
 int main(int argc, char *argv[])
 {
-int i, sum = 0;
+int i;
+unsigned int j, sum = 0;
+char *a;
 
 if (argc > 1)
 {
 for (i = 1; i < argc; i++)
 {
-if (*argv[i] < 48 || *argv[i] > 57)
+a = argv[i];
+for (j = 0; j < strlen(a); j++)
+{
+if (a[j] < 48 || a[j] > 57)
 {
 printf("Error\n");
 return (1);
 }
+}
 sum += atoi(argv[i]);
+a++;
 }
 printf("%d\n", sum);
 }
