@@ -17,7 +17,7 @@ int i, j, x, y;
 if (width <= 0 || height <= 0)
 return (NULL);
 
-arr = (int **)malloc(sizeof(int) * height);
+arr = malloc(sizeof(int *) * height);
 
 if (arr == NULL)
 {
