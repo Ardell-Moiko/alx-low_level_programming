@@ -29,7 +29,7 @@ if (mem == NULL)
 return (NULL);
 }
 
-for ( i = 0; i < arr_len; i++)
+for (i = 0; i < arr_len; i++)
 {
 mem[i] = 0;
 }
