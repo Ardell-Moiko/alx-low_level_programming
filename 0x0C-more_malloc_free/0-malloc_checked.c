@@ -4,16 +4,17 @@
 #include <limits.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * malloc_checked - that allocates memory using malloc.
+ * @b: number of bytes allocated.
+ * Return: pointer to mem address.
  */
 void *malloc_checked(unsigned int b)
 {
-   unsigned int *mem;
-   if (b == NULL)
-     return (NULL);
+void *mem;
 
-   mem = malloc(sizof(unsigned int) * b);
-    return (0);
+mem = (void *)malloc(b);
+
+if (mem == NULL)
+exit(98);
+return (mem);
 }
