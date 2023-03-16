@@ -25,8 +25,14 @@ while (s1[len1])
 len1++;
 while (s2[len2])
 len2++;
+if (n >= len2)
+{
 len3 = len1 + len2 + 1;
-
+}
+else
+{
+len3 = len1 + n + 1;
+}
 s3 = (char *)malloc(sizeof(char) * len3);
 if (s3 == NULL)
 return (NULL);
@@ -34,21 +40,10 @@ for (i = 0; i < len1; i++)
 {
 s3[i] = s1[i];
 }
-if (n >= len2)
-{
-for (i = 0; i < len2; i++)
+for (i = 0; i < len3; i++)
 {
 s3[len1 + i] = s2[i];
 }
 s3[len3 - 1] = '\0';
-}
-else
-{
-for (i = 0; i < n; i++)
-{
-s3[len1 + i] = s2[i];
-}
-s3[len3 - 1] = '\0';
-}
 return (s3);
 }
