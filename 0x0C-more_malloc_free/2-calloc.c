@@ -12,18 +12,26 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-void *mem = malloc(0);
+int i, arr_len;
+char *mem;
 
 if (nmemb == 0 || size == 0)
 {
 return (NULL);
 }
 
-mem = (void *)malloc(nmemb * size);
+arr_len = nmemb * size;
+
+mem = malloc(arr_len);
 
 if (mem == NULL)
 {
 return (NULL);
+}
+
+for ( i = 0; i < arr_len; i++)
+{
+mem[i] = 0;
 }
 return (mem);
 }
