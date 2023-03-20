@@ -1,0 +1,1 @@
+This directory contains C source files for Structures and typedef project tasks.
