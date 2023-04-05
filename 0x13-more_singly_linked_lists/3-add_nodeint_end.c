@@ -22,11 +22,6 @@ return (NULL);
 end_node->n = n;
 end_node->next = NULL;
 
-if (ptr == NULL)
-{
-ptr = end_node;
-return (end_node);
-}
 while (ptr->next != NULL)
 {
 ptr = ptr->next;
