@@ -20,5 +20,6 @@ return (0);
 n = ptr->n;
 ptr = ptr->next;
 free(ptr);
+ptr = *head;
 return (n);
 }
