@@ -21,7 +21,8 @@ for (i = sl; sl >= 0; i--)
 {
 if (b[i] == '0' || b[i] == '1')
 {
-if (b[i] == '1') dec_total += bin_val;
+if (b[i] == '1')
+dec_total += bin_val;
 }
 else
 return (0);
