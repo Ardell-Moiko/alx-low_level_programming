@@ -1,0 +1,1 @@
+This directory contains C source code files on C bitwise operators project tasks.
