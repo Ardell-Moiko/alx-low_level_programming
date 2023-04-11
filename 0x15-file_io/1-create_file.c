@@ -24,13 +24,13 @@ return (-1);
 
 if (text_content)
 {
-while (text_content[i])
+while (text_content[len])
 len++;
 
 buff = write(f_des, text_content, len);
 
 if (buff == -1)
-return (-1)
+return (-1);
 }
 close(f_des);
 return (1);
